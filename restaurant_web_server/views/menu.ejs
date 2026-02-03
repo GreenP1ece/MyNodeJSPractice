@@ -1,0 +1,20 @@
+<!DOCTYPE htrml>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Restaurant</title>
+</head>
+
+<body>
+    <h1>Our Menu</h1>
+    <ol>
+        <% for(let item of menuItems) { %>
+            <li>
+            <strong><%= item.name %></strong>
+            <span><%=item.description %></span>
+            
+            <span>$<%=item.price %></span>
+        <% } %>
+    </ol>
+</body>
